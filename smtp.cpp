@@ -36,7 +36,7 @@ Smtp::Smtp( const QString &user, const QString &pass, const QString &host, int p
 
 void Smtp::sendMail(const QString &from, const QString &to, const QString &subject, int x)
 {
-    if(x=0)
+    if(x==0)
     {message = "To: " + to + "\n";
     message.append("From: " + from + "\n");
     message.append("Subject: " "TABLE DU GESTION DES RESEAUX DES BUS" "\n");
@@ -89,7 +89,7 @@ void Smtp::sendMail(const QString &from, const QString &to, const QString &subje
     message.replace( QString::fromLatin1( "\r\n.\r\n" ),QString::fromLatin1( "\r\n..\r\n" ) );
 
 }
-    if(x=1)
+    if(x==1)
     {message = "To: " + to + "\n";
     message.append("From: " + from + "\n");
     message.append("Subject: " "TABLE DU GESTION DES STATION DES BUS" "\n");

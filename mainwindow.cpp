@@ -18,6 +18,18 @@ ui->stackedWidget->setCurrentIndex(1);
 
 connect(ui->send, SIGNAL(clicked()),this, SLOT(sendMail()));
 connect(ui->sends, SIGNAL(clicked()),this, SLOT(sendMailstation()));
+     
+QRegExp rx("[A-Za-z_]+");//[A-Za-z0-9_]
+    QRegExp rx1("[0-9_]+");
+    QValidator *validator = new QRegExpValidator(rx, this);
+    QValidator *validator2 = new QRegExpValidator(rx1, this);
+    ui->lineEdit_id->setValidator(validator2);
+    ui->lineEdit_duree->setValidator(validator2);
+    ui->lineEdit_distance->setValidator(validator2);
+    ui->lineEdit_trajet->setValidator(validator);
+    ui->lineEdit_emplacement->setValidator(validator);
+    ui->lineEdit_taux->setValidator(validator2);
+    ui->lineEdit_ids->setValidator(validator2);
 
 }
 

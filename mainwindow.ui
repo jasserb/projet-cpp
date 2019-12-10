@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>489</width>
+    <width>479</width>
     <height>391</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Gestion des Reseaux/Station</string>
+   <string>Gestion des Reseaux/Stations</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QToolTip
@@ -939,7 +939,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
    <widget class="QTabWidget" name="tabWidget_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>0</y>
       <width>471</width>
       <height>351</height>
@@ -973,7 +973,7 @@ QWidget:focus
 </string>
      </property>
      <attribute name="title">
-      <string>Gestion des reseau</string>
+      <string>Gestion des reseaux</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget">
       <property name="geometry">
@@ -1446,7 +1446,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
 }</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <property name="styleSheet">
@@ -1952,21 +1952,11 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
          <string>distance</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_trajet">
-        <property name="geometry">
-         <rect>
-          <x>130</x>
-          <y>70</y>
-          <width>113</width>
-          <height>20</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QLineEdit" name="lineEdit_duree">
         <property name="geometry">
          <rect>
-          <x>130</x>
-          <y>120</y>
+          <x>80</x>
+          <y>110</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -1975,7 +1965,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
        <widget class="QLineEdit" name="lineEdit_distance">
         <property name="geometry">
          <rect>
-          <x>130</x>
+          <x>80</x>
           <y>170</y>
           <width>113</width>
           <height>20</height>
@@ -1985,8 +1975,8 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
        <widget class="QPushButton" name="pb_ajouter">
         <property name="geometry">
          <rect>
-          <x>360</x>
-          <y>170</y>
+          <x>350</x>
+          <y>240</y>
           <width>75</width>
           <height>23</height>
          </rect>
@@ -2018,7 +2008,7 @@ QPushButton:pressed
        <widget class="QLineEdit" name="lineEdit_id">
         <property name="geometry">
          <rect>
-          <x>130</x>
+          <x>70</x>
           <y>20</y>
           <width>113</width>
           <height>20</height>
@@ -2036,6 +2026,52 @@ QPushButton:pressed
         </property>
         <property name="text">
          <string>ID</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>60</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_2">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>60</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>60</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>station de depart</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>60</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>stattion d'arrivée</string>
         </property>
        </widget>
       </widget>
@@ -5474,7 +5510,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
          </rect>
         </property>
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="page">
          <widget class="QLineEdit" name="rcpt">
@@ -5796,7 +5832,7 @@ QPushButton:pressed
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
-      <string>Gestion des station</string>
+      <string>Gestion des stations</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_3">
       <property name="geometry">
@@ -6039,7 +6075,7 @@ QPushButton:pressed
          </rect>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="page_3">
          <widget class="QTableView" name="tabstation">
@@ -6209,6 +6245,50 @@ QPushButton:pressed
       </widget>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_11">
+     <attribute name="title">
+      <string>SiteWeb</string>
+     </attribute>
+     <widget class="QPushButton" name="uploadButton">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ajouter les tables au site</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>190</y>
+        <width>211</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;TextLabel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -6225,7 +6305,7 @@ QPushButton:pressed
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>489</width>
+     <width>479</width>
      <height>21</height>
     </rect>
    </property>

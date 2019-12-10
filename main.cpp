@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
     bool test=c.ouvrirConnexion();
     if(test)
     {w.show();
+     w.combo();
         QMessageBox::information(nullptr, QObject::tr("database is open"),
                     QObject::tr("connection successful.\n"
                                 "Click Cancel to exit."), QMessageBox::Ok);

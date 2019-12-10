@@ -6,6 +6,10 @@
 #include <QPrinter>
 #include<QFileDialog>
 #include <QTextDocument>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QString>
+#include <QFile>
 #include "station.h"
 namespace Ui {
 class MainWindow;
@@ -73,6 +77,10 @@ private:
     Ui::MainWindow *ui;
     reseau tmpreseau;
     station tmpstation;
+    NetworkAccessManager *m_manager;
+        QString m_fileName;
+       
+        QFile *m_file;
 
 };
 #endif // MAINWINDOW_H
